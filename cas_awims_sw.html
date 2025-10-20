@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_021ba7f95aaaa1216032e23fd76f8474 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_021ba7f95aaaa1216032e23fd76f8474" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_021ba7f95aaaa1216032e23fd76f8474 = L.map(
+                "map_021ba7f95aaaa1216032e23fd76f8474",
+                {
+                    center: [-29.0, 24.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a2b26296c9506fad6613640768618915 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "ESRI Satellite",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a2b26296c9506fad6613640768618915.addTo(map_021ba7f95aaaa1216032e23fd76f8474);
+        
+    
+            var tile_layer_70aa819b6fc4f18e7d68271c8515567e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_70aa819b6fc4f18e7d68271c8515567e.addTo(map_021ba7f95aaaa1216032e23fd76f8474);
+        
+    
+            var tile_layer_11ac338e1cf389045afcae6e8c37800b = L.tileLayer(
+                "https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=96a62528c9ef42c28b70d943742f5fbc",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Transport Map \u00a9 Thunderforest, OpenStreetMap contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_11ac338e1cf389045afcae6e8c37800b.addTo(map_021ba7f95aaaa1216032e23fd76f8474);
+        
+    
+            var feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_e13d65cb95d8e3bf4d0e5c77829f53cb = L.circleMarker(
+                [-26.2017, 27.990562],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_ec308c2e54d891946603288038aaca35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b28708e647d58c57cf3b9c6ede9e0cbf = $(`<div id="html_b28708e647d58c57cf3b9c6ede9e0cbf" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Vereeniging<br><b>Latitude:</b> -26.2017<br><b>Longitude:</b> 27.990562<br><b>Region:</b> Central<br><b>Site Names:</b> Langlaagte<br><b>Type:</b> Digital<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_ec308c2e54d891946603288038aaca35.setContent(html_b28708e647d58c57cf3b9c6ede9e0cbf);
+            
+        
+
+        circle_marker_e13d65cb95d8e3bf4d0e5c77829f53cb.bindPopup(popup_ec308c2e54d891946603288038aaca35)
+        ;
+
+        
+    
+    
+            circle_marker_e13d65cb95d8e3bf4d0e5c77829f53cb.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e887f6b43b722ff1aeb8b9419357e63 = L.circleMarker(
+                [-26.218149, 28.08401],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_6652f8e3dea25029a712f3c6e88bd1c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08944ec9308c414ca9f805e91ef7bc12 = $(`<div id="html_08944ec9308c414ca9f805e91ef7bc12" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Durban<br><b>Latitude:</b> -26.218149<br><b>Longitude:</b> 28.08401<br><b>Region:</b> Central<br><b>Site Names:</b> King's Rest<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_6652f8e3dea25029a712f3c6e88bd1c1.setContent(html_08944ec9308c414ca9f805e91ef7bc12);
+            
+        
+
+        circle_marker_5e887f6b43b722ff1aeb8b9419357e63.bindPopup(popup_6652f8e3dea25029a712f3c6e88bd1c1)
+        ;
+
+        
+    
+    
+            circle_marker_5e887f6b43b722ff1aeb8b9419357e63.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cfbadfef00dedca3431f7f520c912db8 = L.circleMarker(
+                [-23.885264, 29.447072],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_6d8eadff82221f79c9546ebe788a8f8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4fa401f75aa12d77f6ca94ce3dc16cd = $(`<div id="html_b4fa401f75aa12d77f6ca94ce3dc16cd" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Polokwane<br><b>Latitude:</b> -23.885264<br><b>Longitude:</b> 29.447072<br><b>Region:</b> Central<br><b>Site Names:</b> Polokwane<br><b>Type:</b> Digital<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_6d8eadff82221f79c9546ebe788a8f8d.setContent(html_b4fa401f75aa12d77f6ca94ce3dc16cd);
+            
+        
+
+        circle_marker_cfbadfef00dedca3431f7f520c912db8.bindPopup(popup_6d8eadff82221f79c9546ebe788a8f8d)
+        ;
+
+        
+    
+    
+            circle_marker_cfbadfef00dedca3431f7f520c912db8.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ff86e127af315a0057bb27202fbadea3 = L.circleMarker(
+                [-26.560061, 30.011026],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_02bc1b01304d9660831dc03c1c212e5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d3e249ba6becdfd772e0ffd1a676fc6 = $(`<div id="html_6d3e249ba6becdfd772e0ffd1a676fc6" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Ermelo<br><b>Latitude:</b> -26.560061<br><b>Longitude:</b> 30.011026<br><b>Region:</b> East<br><b>Site Names:</b> Ermelo<br><b>Type Approval #:</b> SA 1430 AA 16<br><b>Type:</b> Digital<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_02bc1b01304d9660831dc03c1c212e5b.setContent(html_6d3e249ba6becdfd772e0ffd1a676fc6);
+            
+        
+
+        circle_marker_ff86e127af315a0057bb27202fbadea3.bindPopup(popup_02bc1b01304d9660831dc03c1c212e5b)
+        ;
+
+        
+    
+    
+            circle_marker_ff86e127af315a0057bb27202fbadea3.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_606bfd610607f26c9bf95387dc9d8026 = L.circleMarker(
+                [-25.874518, 29.205606],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_1e18dd19a93fe737aaae5b37eae8ad29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a026aa2f0988b7c2612a2179342b94cc = $(`<div id="html_a026aa2f0988b7c2612a2179342b94cc" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Witbank<br><b>Latitude:</b> -25.874518<br><b>Longitude:</b> 29.205606<br><b>Region:</b> East<br><b>Site Names:</b> Witbank<br><b>Type Approval #:</b> SA 1430 AA 16<br><b>Type:</b> Digital<br><b>Capacity:</b> 120T<br></div>`)[0];
+                popup_1e18dd19a93fe737aaae5b37eae8ad29.setContent(html_a026aa2f0988b7c2612a2179342b94cc);
+            
+        
+
+        circle_marker_606bfd610607f26c9bf95387dc9d8026.bindPopup(popup_1e18dd19a93fe737aaae5b37eae8ad29)
+        ;
+
+        
+    
+    
+            circle_marker_606bfd610607f26c9bf95387dc9d8026.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1e3a2920c44c71b882ca03cc2b61019 = L.circleMarker(
+                [-24.731467, 30.214107],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_5158a78a4190f584a94513cf1b997f65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f9036391f2f3dc7f81a7a35dda1e71e = $(`<div id="html_6f9036391f2f3dc7f81a7a35dda1e71e" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Witbank<br><b>Latitude:</b> -24.731467<br><b>Longitude:</b> 30.214107<br><b>Region:</b> East<br><b>Site Names:</b> Steelpoort (1)<br><b>Type Approval #:</b> SA 1430 AA 16<br><b>Type:</b> Digital<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_5158a78a4190f584a94513cf1b997f65.setContent(html_6f9036391f2f3dc7f81a7a35dda1e71e);
+            
+        
+
+        circle_marker_c1e3a2920c44c71b882ca03cc2b61019.bindPopup(popup_5158a78a4190f584a94513cf1b997f65)
+        ;
+
+        
+    
+    
+            circle_marker_c1e3a2920c44c71b882ca03cc2b61019.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4156cd0c7d60a916230510aca065a9d = L.circleMarker(
+                [-24.731467, 30.214107],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_17eaee81388600e47421ec856a6031c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_086c59610eb0e245d7e9fa8fb32e1392 = $(`<div id="html_086c59610eb0e245d7e9fa8fb32e1392" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Witbank<br><b>Latitude:</b> -24.731467<br><b>Longitude:</b> 30.214107<br><b>Region:</b> East<br><b>Site Names:</b> Steelpoort (2)<br><b>Type Approval #:</b> SA 1430 AA 16<br><b>Type:</b> Digital<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_17eaee81388600e47421ec856a6031c9.setContent(html_086c59610eb0e245d7e9fa8fb32e1392);
+            
+        
+
+        circle_marker_a4156cd0c7d60a916230510aca065a9d.bindPopup(popup_17eaee81388600e47421ec856a6031c9)
+        ;
+
+        
+    
+    
+            circle_marker_a4156cd0c7d60a916230510aca065a9d.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4f1c159f5978d48217ef980f53e9444 = L.circleMarker(
+                [-34.135189, 22.104148],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_a54f7f85433e17905da0ec144e3c1be9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc66420dd73f055663877219de0ab924 = $(`<div id="html_fc66420dd73f055663877219de0ab924" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Port Elizabeth (Gqeberha)<br><b>Latitude:</b> -34.135189<br><b>Longitude:</b> 22.104148<br><b>Region:</b> West<br><b>Site Names:</b> Voorbaai<br><b>Type:</b> Mechanical<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_a54f7f85433e17905da0ec144e3c1be9.setContent(html_fc66420dd73f055663877219de0ab924);
+            
+        
+
+        circle_marker_d4f1c159f5978d48217ef980f53e9444.bindPopup(popup_a54f7f85433e17905da0ec144e3c1be9)
+        ;
+
+        
+    
+    
+            circle_marker_d4f1c159f5978d48217ef980f53e9444.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5205bd29685cac3e7f70fcbfadcb74e5 = L.circleMarker(
+                [-33.956141, 25.630577],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_6116d51ea46e29a12d20931d76ffabee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef8b894d877b525ba316c10141fe8346 = $(`<div id="html_ef8b894d877b525ba316c10141fe8346" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Port Elizabeth (Gqeberha)<br><b>Latitude:</b> -33.956141<br><b>Longitude:</b> 25.630577<br><b>Region:</b> West<br><b>Site Names:</b> PE Harbour<br><b>Type Approval #:</b> SA 1313 AA 4<br><b>Type:</b> Mechanical<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_6116d51ea46e29a12d20931d76ffabee.setContent(html_ef8b894d877b525ba316c10141fe8346);
+            
+        
+
+        circle_marker_5205bd29685cac3e7f70fcbfadcb74e5.bindPopup(popup_6116d51ea46e29a12d20931d76ffabee)
+        ;
+
+        
+    
+    
+            circle_marker_5205bd29685cac3e7f70fcbfadcb74e5.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91f9cfb20a7be805adcf70534c495969 = L.circleMarker(
+                [-33.917093, 18.624318],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_5c0c28625981c81fa4ef5be68ac8c9ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_122836534819a7c00c92d997a23b521c = $(`<div id="html_122836534819a7c00c92d997a23b521c" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Bellville<br><b>Latitude:</b> -33.917093<br><b>Longitude:</b> 18.624318<br><b>Region:</b> West<br><b>Site Names:</b> Bellville<br><b>Type:</b> Analogue<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_5c0c28625981c81fa4ef5be68ac8c9ab.setContent(html_122836534819a7c00c92d997a23b521c);
+            
+        
+
+        circle_marker_91f9cfb20a7be805adcf70534c495969.bindPopup(popup_5c0c28625981c81fa4ef5be68ac8c9ab)
+        ;
+
+        
+    
+    
+            circle_marker_91f9cfb20a7be805adcf70534c495969.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_557303becdddf3c94ac81bfe4bed011f = L.circleMarker(
+                [-33.639125, 19.444615],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_72939f5801d6b12d05e20aee475cc793 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17d63b2b1272840e04c0557116fa6d84 = $(`<div id="html_17d63b2b1272840e04c0557116fa6d84" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Bellville<br><b>Latitude:</b> -33.639125<br><b>Longitude:</b> 19.444615<br><b>Region:</b> West<br><b>Site Names:</b> Worcester<br><b>Type Approval #:</b> SA 1430<br><b>Type:</b> Mechanical<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_72939f5801d6b12d05e20aee475cc793.setContent(html_17d63b2b1272840e04c0557116fa6d84);
+            
+        
+
+        circle_marker_557303becdddf3c94ac81bfe4bed011f.bindPopup(popup_72939f5801d6b12d05e20aee475cc793)
+        ;
+
+        
+    
+    
+            circle_marker_557303becdddf3c94ac81bfe4bed011f.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12a742ddaa91243c782b24e14afb5ef7 = L.circleMarker(
+                [-33.921081, 18.441171],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_788b96e225b5b03e41cf06a00357ef1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac39dd367ddd69b0f65d177f02a9794c = $(`<div id="html_ac39dd367ddd69b0f65d177f02a9794c" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Bellville<br><b>Latitude:</b> -33.921081<br><b>Longitude:</b> 18.441171<br><b>Region:</b> West<br><b>Site Names:</b> Cape Town Harbour<br><b>Type Approval #:</b> SA 1313 AA 4<br><b>Type:</b> Digital<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_788b96e225b5b03e41cf06a00357ef1c.setContent(html_ac39dd367ddd69b0f65d177f02a9794c);
+            
+        
+
+        circle_marker_12a742ddaa91243c782b24e14afb5ef7.bindPopup(popup_788b96e225b5b03e41cf06a00357ef1c)
+        ;
+
+        
+    
+    
+            circle_marker_12a742ddaa91243c782b24e14afb5ef7.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60f5a73d8b397b171ef271517be19739 = L.circleMarker(
+                [-28.307806, 23.052866],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_c2ee87bbd9a5f680bcdfecc5ca39e858 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ad9ed10d0c5e238d4b012d074a99efd = $(`<div id="html_6ad9ed10d0c5e238d4b012d074a99efd" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Kimberly North<br><b>Latitude:</b> -28.307806<br><b>Longitude:</b> 23.052866<br><b>Region:</b> West<br><b>Site Names:</b> Postmasburg<br><b>Type Approval #:</b> SA 1370 AA 1<br><b>Type:</b> Mechanical<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_c2ee87bbd9a5f680bcdfecc5ca39e858.setContent(html_6ad9ed10d0c5e238d4b012d074a99efd);
+            
+        
+
+        circle_marker_60f5a73d8b397b171ef271517be19739.bindPopup(popup_c2ee87bbd9a5f680bcdfecc5ca39e858)
+        ;
+
+        
+    
+    
+            circle_marker_60f5a73d8b397b171ef271517be19739.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8bad1db3969cdf90d4a1224a5a73026c = L.circleMarker(
+                [-29.115354, 26.237265],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_b8ff2ac8ae5e6168c27f4059e1d7a775 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc484397e69dd8cb6e1bbc4597ebbdb1 = $(`<div id="html_cc484397e69dd8cb6e1bbc4597ebbdb1" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Bloemfontein<br><b>Latitude:</b> -29.115354<br><b>Longitude:</b> 26.237265<br><b>Region:</b> West<br><b>Site Names:</b> Bloemfontein<br><b>Type:</b> Digital<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_b8ff2ac8ae5e6168c27f4059e1d7a775.setContent(html_cc484397e69dd8cb6e1bbc4597ebbdb1);
+            
+        
+
+        circle_marker_8bad1db3969cdf90d4a1224a5a73026c.bindPopup(popup_b8ff2ac8ae5e6168c27f4059e1d7a775)
+        ;
+
+        
+    
+    
+            circle_marker_8bad1db3969cdf90d4a1224a5a73026c.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_577117b9172c554beb2c82a8646fdffa = L.circleMarker(
+                [-28.45368, 21.236322],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc);
+        
+    
+        var popup_6f989aa67dff23a5f825491552baaf9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0426a16caa1151e8e122e5adb4ea932d = $(`<div id="html_0426a16caa1151e8e122e5adb4ea932d" style="width: 100.0%; height: 100.0%;"><b>Type:</b> SW<br><b>Depot:</b> Upington<br><b>Latitude:</b> -28.45368<br><b>Longitude:</b> 21.236322<br><b>Region:</b> West<br><b>Site Names:</b> Upington<br><b>Type:</b> Mechanical<br><b>Capacity:</b> 100T<br></div>`)[0];
+                popup_6f989aa67dff23a5f825491552baaf9a.setContent(html_0426a16caa1151e8e122e5adb4ea932d);
+            
+        
+
+        circle_marker_577117b9172c554beb2c82a8646fdffa.bindPopup(popup_6f989aa67dff23a5f825491552baaf9a)
+        ;
+
+        
+    
+    
+            circle_marker_577117b9172c554beb2c82a8646fdffa.bindTooltip(
+                `<div>
+                     SW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc.addTo(map_021ba7f95aaaa1216032e23fd76f8474);
+        
+    
+            var feature_group_852d7217c24267aa3a483f5bcbdab60d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_68591ebf48c6bbafab57bc4d8f04c900 = L.circleMarker(
+                [-28.776005, 31.998424],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_05dc8cb4491ac998402094baa4e69f91 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c48877699078cab0ccd3fea39485526 = $(`<div id="html_0c48877699078cab0ccd3fea39485526" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> North<br><b>Depot:</b> Empangeni<br><b>Site ID:</b> RBY.CTL2.BHZ.ASW.01<br><b>Site Name:</b> Bhizolo<br><b>Latitude:</b> -28.776005<br><b>Longitude:</b> 31.998424<br><b>KM Point :</b> 203.68<br></div>`)[0];
+                popup_05dc8cb4491ac998402094baa4e69f91.setContent(html_0c48877699078cab0ccd3fea39485526);
+            
+        
+
+        circle_marker_68591ebf48c6bbafab57bc4d8f04c900.bindPopup(popup_05dc8cb4491ac998402094baa4e69f91)
+        ;
+
+        
+    
+    
+            circle_marker_68591ebf48c6bbafab57bc4d8f04c900.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a1b97341533d7655b5b4c15aabff738 = L.circleMarker(
+                [-28.776005, 31.998424],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_36e5712bde2f4743612abe2f5395ec01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55f81e581ae15bd541fff57e8952b954 = $(`<div id="html_55f81e581ae15bd541fff57e8952b954" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> North<br><b>Depot:</b> Empangeni<br><b>Site ID:</b> RBY.CTL2.BHZ.ASW.02<br><b>Site Name:</b> Bhizolo<br><b>Latitude:</b> -28.776005<br><b>Longitude:</b> 31.998424<br><b>KM Point :</b> 203.68<br></div>`)[0];
+                popup_36e5712bde2f4743612abe2f5395ec01.setContent(html_55f81e581ae15bd541fff57e8952b954);
+            
+        
+
+        circle_marker_9a1b97341533d7655b5b4c15aabff738.bindPopup(popup_36e5712bde2f4743612abe2f5395ec01)
+        ;
+
+        
+    
+    
+            circle_marker_9a1b97341533d7655b5b4c15aabff738.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a06ef322a35dc4d02585e03e153e44c6 = L.circleMarker(
+                [-26.292332, 29.56304],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_93566b10335be1e64ba5b057f9260b13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfe066488731f510ad43437a0bcaaba1 = $(`<div id="html_bfe066488731f510ad43437a0bcaaba1" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> North <br><b>Depot:</b> Ermelo<br><b>Site ID:</b> EMR.HWN1.HWN.ASW.01<br><b>Site Name:</b> Halfgewonen C<br><b>Latitude:</b> -26.292332<br><b>Longitude:</b> 29.56304<br><b>KM Point :</b> 80.13<br></div>`)[0];
+                popup_93566b10335be1e64ba5b057f9260b13.setContent(html_bfe066488731f510ad43437a0bcaaba1);
+            
+        
+
+        circle_marker_a06ef322a35dc4d02585e03e153e44c6.bindPopup(popup_93566b10335be1e64ba5b057f9260b13)
+        ;
+
+        
+    
+    
+            circle_marker_a06ef322a35dc4d02585e03e153e44c6.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80bc574bd455fd6dfb8d9fb76a3fb952 = L.circleMarker(
+                [-26.292332, 29.56304],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_c5de56c4a301a1a44ee6ac6ddd548b22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b17c4b679d99b89d35b7c9d839782782 = $(`<div id="html_b17c4b679d99b89d35b7c9d839782782" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> North <br><b>Depot:</b> Ermelo<br><b>Site ID:</b> EMR.HWN1.HWN.ASW.02<br><b>Site Name:</b> Halfgewonen C<br><b>Latitude:</b> -26.292332<br><b>Longitude:</b> 29.56304<br><b>KM Point :</b> 80.13<br></div>`)[0];
+                popup_c5de56c4a301a1a44ee6ac6ddd548b22.setContent(html_b17c4b679d99b89d35b7c9d839782782);
+            
+        
+
+        circle_marker_80bc574bd455fd6dfb8d9fb76a3fb952.bindPopup(popup_c5de56c4a301a1a44ee6ac6ddd548b22)
+        ;
+
+        
+    
+    
+            circle_marker_80bc574bd455fd6dfb8d9fb76a3fb952.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db83b607ce94954a132d378cdfff5eb5 = L.circleMarker(
+                [-28.703744, 32.018938],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_aa48a4a87ee0a6779c973f8dcd042ea3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50bb27e4e0df5b84e3e33f01275ba57a = $(`<div id="html_50bb27e4e0df5b84e3e33f01275ba57a" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> North<br><b>Depot:</b> Richards Bay <br><b>Site ID:</b> NSI.ASW.01<br><b>Site Name:</b> Nsezi<br><b>Latitude:</b> -28.703744<br><b>Longitude:</b> 32.018938<br><b>KM Point :</b> 194.0<br></div>`)[0];
+                popup_aa48a4a87ee0a6779c973f8dcd042ea3.setContent(html_50bb27e4e0df5b84e3e33f01275ba57a);
+            
+        
+
+        circle_marker_db83b607ce94954a132d378cdfff5eb5.bindPopup(popup_aa48a4a87ee0a6779c973f8dcd042ea3)
+        ;
+
+        
+    
+    
+            circle_marker_db83b607ce94954a132d378cdfff5eb5.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a20535c2fd992efaf922f88be6e7220 = L.circleMarker(
+                [-32.894428, 18.085196],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_d0f43ce2c0eddbb0861f39d13466d1ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17c28e6bebfc84c62bc3eda77d246b97 = $(`<div id="html_17c28e6bebfc84c62bc3eda77d246b97" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> Ore<br><b>Depot:</b> Saldanha<br><b>Site ID:</b> SLK.KM06.KM6.ASW.01<br><b>Site Name:</b> Kilometer 6<br><b>Latitude:</b> -32.894428<br><b>Longitude:</b> 18.085196<br><b>KM Point :</b> 6.07<br></div>`)[0];
+                popup_d0f43ce2c0eddbb0861f39d13466d1ef.setContent(html_17c28e6bebfc84c62bc3eda77d246b97);
+            
+        
+
+        circle_marker_6a20535c2fd992efaf922f88be6e7220.bindPopup(popup_d0f43ce2c0eddbb0861f39d13466d1ef)
+        ;
+
+        
+    
+    
+            circle_marker_6a20535c2fd992efaf922f88be6e7220.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df6a7ba8c707c3e9dbff7462b993166e = L.circleMarker(
+                [-28.0759370835, 22.7071372003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_43bf1a47ed845fd98eca7ec8dc1ea626 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87c505a55703030804cdb1958f379939 = $(`<div id="html_87c505a55703030804cdb1958f379939" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> Ore<br><b>Depot:</b> Saldanha<br><b>Site ID:</b> SLK.K804.804.ASW.01<br><b>Site Name:</b> Kilometer 804<br><b>Latitude:</b> -28.0759370835<br><b>Longitude:</b> 22.7071372003<br><b>KM Point :</b> 803.935<br></div>`)[0];
+                popup_43bf1a47ed845fd98eca7ec8dc1ea626.setContent(html_87c505a55703030804cdb1958f379939);
+            
+        
+
+        circle_marker_df6a7ba8c707c3e9dbff7462b993166e.bindPopup(popup_43bf1a47ed845fd98eca7ec8dc1ea626)
+        ;
+
+        
+    
+    
+            circle_marker_df6a7ba8c707c3e9dbff7462b993166e.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a635d941ae8ed48a8aa27bc3aa2da5e = L.circleMarker(
+                [-26.176563, 28.587127],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_230eecd6be31d7a140809e862309f27e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f60c5a6253024dbf3ba2c24936a82f2 = $(`<div id="html_5f60c5a6253024dbf3ba2c24936a82f2" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> Central<br><b>Depot:</b> Isando<br><b>Site ID:</b> OGS.OGS1.ELF.ASW.02<br><b>Site Name:</b> Eloff<br><b>Latitude:</b> -26.176563<br><b>Longitude:</b> 28.587127<br><b>KM Point :</b> 12.0<br></div>`)[0];
+                popup_230eecd6be31d7a140809e862309f27e.setContent(html_5f60c5a6253024dbf3ba2c24936a82f2);
+            
+        
+
+        circle_marker_5a635d941ae8ed48a8aa27bc3aa2da5e.bindPopup(popup_230eecd6be31d7a140809e862309f27e)
+        ;
+
+        
+    
+    
+            circle_marker_5a635d941ae8ed48a8aa27bc3aa2da5e.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc6f39a8007f91459451564dabaf0fcf = L.circleMarker(
+                [-27.71687, 27.2068],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_eb7fb8f9d9bc66d37a6c87e05b010bc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a87e21db158ff3cffb18f623089ce790 = $(`<div id="html_a87e21db158ff3cffb18f623089ce790" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> Cape<br><b>Depot:</b> Bloemfontein<br><b>Site ID:</b> KDR.KDR1.BGU.ASW.01<br><b>Site Name:</b> Gunhill<br><b>Latitude:</b> -27.71687<br><b>Longitude:</b> 27.2068<br><b>KM Point :</b> 3.0<br></div>`)[0];
+                popup_eb7fb8f9d9bc66d37a6c87e05b010bc2.setContent(html_a87e21db158ff3cffb18f623089ce790);
+            
+        
+
+        circle_marker_dc6f39a8007f91459451564dabaf0fcf.bindPopup(popup_eb7fb8f9d9bc66d37a6c87e05b010bc2)
+        ;
+
+        
+    
+    
+            circle_marker_dc6f39a8007f91459451564dabaf0fcf.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18f285c37f78f83ab1614f6ac9c8e877 = L.circleMarker(
+                [-27.426667, 22.981389],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_08a4f638f3a638f3a86fb8ed4bdd3004 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3936c8240c22fe7dae49bfa3ca6c44e4 = $(`<div id="html_3936c8240c22fe7dae49bfa3ca6c44e4" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> Cape <br><b>Depot:</b> Kimberley North<br><b>Site ID:</b> KBY.KBY1.MHV.ASW.01<br><b>Site Name:</b> Mamathwane<br><b>Latitude:</b> -27.426667<br><b>Longitude:</b> 22.981389<br><b>KM Point :</b> 312.0<br></div>`)[0];
+                popup_08a4f638f3a638f3a86fb8ed4bdd3004.setContent(html_3936c8240c22fe7dae49bfa3ca6c44e4);
+            
+        
+
+        circle_marker_18f285c37f78f83ab1614f6ac9c8e877.bindPopup(popup_08a4f638f3a638f3a86fb8ed4bdd3004)
+        ;
+
+        
+    
+    
+            circle_marker_18f285c37f78f83ab1614f6ac9c8e877.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89cbd4dda58fd82e8b6d96a0aa00bbde = L.circleMarker(
+                [-28.30329, 23.03943],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_4adac46ad5b3cbb7185f5db14f02234a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23f9c40442130cd292345fd3be572a29 = $(`<div id="html_23f9c40442130cd292345fd3be572a29" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> Cape <br><b>Depot:</b> Kimberley North<br><b>Site ID:</b> KBY.KBY1.PMG.ASW.01<br><b>Site Name:</b> Postmasburg<br><b>Latitude:</b> -28.30329<br><b>Longitude:</b> 23.03943<br><b>KM Point :</b> 206.0<br></div>`)[0];
+                popup_4adac46ad5b3cbb7185f5db14f02234a.setContent(html_23f9c40442130cd292345fd3be572a29);
+            
+        
+
+        circle_marker_89cbd4dda58fd82e8b6d96a0aa00bbde.bindPopup(popup_4adac46ad5b3cbb7185f5db14f02234a)
+        ;
+
+        
+    
+    
+            circle_marker_89cbd4dda58fd82e8b6d96a0aa00bbde.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef55943a65303fc690c4e669d4d6d9ef = L.circleMarker(
+                [-25.57, 30.663],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_91ab8c195ef85aecb45596b313d8de34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ce1059a33b31eebbf79ba1878c5e63d = $(`<div id="html_6ce1059a33b31eebbf79ba1878c5e63d" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> North-East<br><b>Depot:</b> Nelspruit<br><b>Site ID:</b> NGX.ASW.01<br><b>Site Name:</b> Ngodwana <br><b>Latitude:</b> -25.57<br><b>Longitude:</b> 30.663<br><b>KM Point :</b> 59.0<br></div>`)[0];
+                popup_91ab8c195ef85aecb45596b313d8de34.setContent(html_6ce1059a33b31eebbf79ba1878c5e63d);
+            
+        
+
+        circle_marker_ef55943a65303fc690c4e669d4d6d9ef.bindPopup(popup_91ab8c195ef85aecb45596b313d8de34)
+        ;
+
+        
+    
+    
+            circle_marker_ef55943a65303fc690c4e669d4d6d9ef.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60a1821a1b7ffde56dcd5e2e6e9a224d = L.circleMarker(
+                [-23.98457, 31.102676],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_852d7217c24267aa3a483f5bcbdab60d);
+        
+    
+        var popup_269813675f418d00ce22a40056949c52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09c20dc0a423649830a08ac961335416 = $(`<div id="html_09c20dc0a423649830a08ac961335416" style="width: 100.0%; height: 100.0%;"><b>Type:</b> AWIMS<br><b>Corridor:</b> North-East<br><b>Depot:</b> Nelspruit<br><b>Site ID:</b> PBA.ASW.01<br><b>Site Name:</b> Phalaborwa<br><b>Latitude:</b> -23.98457<br><b>Longitude:</b> 31.102676<br><b>KM Point :</b> 48.0<br></div>`)[0];
+                popup_269813675f418d00ce22a40056949c52.setContent(html_09c20dc0a423649830a08ac961335416);
+            
+        
+
+        circle_marker_60a1821a1b7ffde56dcd5e2e6e9a224d.bindPopup(popup_269813675f418d00ce22a40056949c52)
+        ;
+
+        
+    
+    
+            circle_marker_60a1821a1b7ffde56dcd5e2e6e9a224d.bindTooltip(
+                `<div>
+                     AWIMS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_852d7217c24267aa3a483f5bcbdab60d.addTo(map_021ba7f95aaaa1216032e23fd76f8474);
+        
+    
+            var layer_control_9d491812a2571ebf5953d1e7489dd323_layers = {
+                base_layers : {
+                    "Satellite" : tile_layer_a2b26296c9506fad6613640768618915,
+                    "OpenStreetMap" : tile_layer_70aa819b6fc4f18e7d68271c8515567e,
+                    "Transport Map" : tile_layer_11ac338e1cf389045afcae6e8c37800b,
+                },
+                overlays :  {
+                    "\u003cspan style=\"display: inline-block; width: 12px; height: 12px; border-radius: 50%; background-color: red; border: 2px solid white; box-shadow: 0 0 3px rgba(0,0,0,0.5); margin-right: 8px; vertical-align: middle;\"\u003e\u003c/span\u003eSW (15 sites)" : feature_group_a61f70bad2cc0dbb25e53f2fc12b3ebc,
+                    "\u003cspan style=\"display: inline-block; width: 12px; height: 12px; border-radius: 50%; background-color: blue; border: 2px solid white; box-shadow: 0 0 3px rgba(0,0,0,0.5); margin-right: 8px; vertical-align: middle;\"\u003e\u003c/span\u003eAWIMS (13 sites)" : feature_group_852d7217c24267aa3a483f5bcbdab60d,
+                },
+            };
+            let layer_control_9d491812a2571ebf5953d1e7489dd323 = L.control.layers(
+                layer_control_9d491812a2571ebf5953d1e7489dd323_layers.base_layers,
+                layer_control_9d491812a2571ebf5953d1e7489dd323_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_021ba7f95aaaa1216032e23fd76f8474);
+
+        
+</script>
+</html>
